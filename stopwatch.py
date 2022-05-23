@@ -6,7 +6,7 @@ def create_window():
     sg.theme('black')
 
     layout = [
-        [sg.Push(), sg.Image('cross.png', key='-Close-', enable_events=True, pad=0)],
+        [sg.Push(), sg.Text('X', key='-Close-', enable_events=True, pad=0)],
         [sg.VPush()],
         [sg.Text('', font='Young 60', key="-Time-")],
         [sg.Button("Start", button_color=('#FFFFFF', '#FF0000'), font='Young', border_width=0, key="-StartStop-"),
